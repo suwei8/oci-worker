@@ -2,13 +2,8 @@ name: OCI Worker (Public)
 
 on:
   workflow_dispatch:
-    inputs:
-      task_id:
-        description: 'Task ID to execute'
-        required: false
-        type: string
-  schedule:
-    - cron: '*/5 * * * *' # Backup polling (every 5 min to catch idle tasks)
+  # schedule:
+  #   - cron: '*/5 * * * *'
 
 jobs:
   worker:
